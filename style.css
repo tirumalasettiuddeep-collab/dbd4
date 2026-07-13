@@ -353,3 +353,76 @@ alert("🎉 The magic begins...");
 },1200);
 
 });
+/* ===========================
+   PAGE 3 GIFT
+=========================== */
+
+.gift3-container{
+
+    text-align:center;
+
+}
+
+
+.gift3-container h1{
+
+    font-size:55px;
+    color:#ff4b93;
+
+}
+
+
+.gift3-container p{
+
+    font-size:25px;
+    color:#666;
+    margin:20px;
+
+}
+
+
+#gift3D{
+
+    margin:40px auto;
+
+    width:180px;
+    height:180px;
+
+    position:relative;
+
+    cursor:pointer;
+
+    transition:.5s;
+
+}
+
+
+.giftBoxBody{
+
+    font-size:120px;
+
+}
+
+
+.giftLid{
+
+    position:absolute;
+
+    top:-25px;
+
+    left:35px;
+
+    font-size:70px;
+
+    transition:1s;
+
+}
+
+
+#openGiftButton{
+
+    background:#ff5fa2;
+
+    color:white;
+
+}
