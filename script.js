@@ -448,3 +448,70 @@ document.addEventListener("keydown",function(e){
     }
 
 });
+// =============================
+// FINAL EFFECTS
+// =============================
+
+
+const bgMusic=document.getElementById("bgMusic");
+
+
+// Start music after first click
+
+document.body.addEventListener("click",function(){
+
+    bgMusic.play();
+
+},{once:true});
+
+
+
+// Final page effect
+
+finalPage.addEventListener("transitionend",function(){
+
+    createHearts();
+
+});
+
+
+
+function createHearts(){
+
+
+    for(let i=0;i<40;i++){
+
+
+        let heart=document.createElement("div");
+
+
+        heart.innerHTML="💖";
+
+
+        heart.style.position="fixed";
+
+        heart.style.left=Math.random()*100+"%";
+
+        heart.style.top="-20px";
+
+        heart.style.fontSize="30px";
+
+
+        heart.style.animation=
+
+        "heartFloat 5s linear";
+
+
+        document.body.appendChild(heart);
+
+
+        setTimeout(()=>{
+
+            heart.remove();
+
+        },5000);
+
+
+    }
+
+}
