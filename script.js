@@ -329,3 +329,26 @@ transform:scale(1);
 }
 
 }
+// =============================
+// PAGE 4
+// =============================
+
+const page4=document.getElementById("page4");
+
+const nextPageButton=document.getElementById("nextPageButton");
+
+
+openGiftButton.addEventListener("click",function(){
+
+    page3.classList.remove("active");
+
+    page4.classList.add("active");
+
+});
+
+
+nextPageButton.addEventListener("click",function(){
+
+    alert("💖 More surprises are waiting...");
+
+});
