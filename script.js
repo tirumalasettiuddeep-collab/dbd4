@@ -352,3 +352,26 @@ nextPageButton.addEventListener("click",function(){
     alert("💖 More surprises are waiting...");
 
 });
+// =============================
+// PAGE 5
+// =============================
+
+const page5=document.getElementById("page5");
+
+const songButton=document.getElementById("songButton");
+
+
+nextPageButton.addEventListener("click",function(){
+
+    page4.classList.remove("active");
+
+    page5.classList.add("active");
+
+});
+
+
+songButton.addEventListener("click",function(){
+
+    alert("🎶 Your special song will play here ❤️");
+
+});
