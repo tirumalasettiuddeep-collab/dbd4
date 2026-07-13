@@ -322,3 +322,34 @@ font-size:100px;
 }
 
 }
+// =============================
+// PAGE 3
+// =============================
+
+const page3=document.getElementById("page3");
+
+const gift3D=document.getElementById("gift3D");
+
+const openGiftButton=document.getElementById("openGiftButton");
+
+openGiftButton.addEventListener("click",function(){
+
+page2.classList.remove("active");
+
+page3.classList.add("active");
+
+});
+
+gift3D.addEventListener("click",function(){
+
+document.querySelector(".giftLid").style.transform="rotate(-130deg)";
+
+gift3D.style.transform="scale(1.1)";
+
+setTimeout(function(){
+
+alert("🎉 The magic begins...");
+
+},1200);
+
+});
