@@ -375,3 +375,76 @@ songButton.addEventListener("click",function(){
     alert("🎶 Your special song will play here ❤️");
 
 });
+// =============================
+// PAGE 6 COUNTDOWN
+// =============================
+
+
+const page6=document.getElementById("page6");
+
+const finalPage=document.getElementById("finalPage");
+
+
+songButton.addEventListener("click",function(){
+
+    page5.classList.remove("active");
+
+    page6.classList.add("active");
+
+});
+
+
+// Birthday date
+
+const birthdayDate = new Date("January 26, 2027 00:00:00").getTime();
+
+
+setInterval(function(){
+
+    let now = new Date().getTime();
+
+    let distance = birthdayDate - now;
+
+
+    let days=Math.floor(distance/(1000*60*60*24));
+
+    let hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+    let minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+
+    let seconds=Math.floor((distance%(1000*60))/1000);
+
+
+    document.getElementById("days").innerHTML=days;
+
+    document.getElementById("hours").innerHTML=hours;
+
+    document.getElementById("minutes").innerHTML=minutes;
+
+    document.getElementById("seconds").innerHTML=seconds;
+
+
+},1000);
+
+
+
+// Hidden access
+
+document.addEventListener("keydown",function(e){
+
+    if(e.ctrlKey && e.shiftKey && e.key==="D"){
+
+        let password=prompt("Enter secret password");
+
+
+        if(password==="26"){
+
+            page6.classList.remove("active");
+
+            finalPage.classList.add("active");
+
+        }
+
+    }
+
+});
